@@ -25,19 +25,19 @@ for i in range (0,len(t)):
     if len(s) == 3:
         print("".join(t[i]),"-->", x )
         time.sleep(0.04)
-    if len(s) == 4:
+    elif len(s) == 4:
         print("".join(t[i]),"-->", x )
         time.sleep(0.03)
-    if len(s) == 5:
+    elif len(s) == 5:
         print("".join(t[i]),"-->", x )
         time.sleep(0.02)
-    if len(s) == 6:
+    elif len(s) == 6:
         print("".join(t[i]),"-->", x )
         time.sleep(0.01)
-    if len(s) == 7:
+    elif len(s) == 7:
         print("".join(t[i]),"-->", x )
         time.sleep(0.001)
-    if len(s) > 7:
+    elif len(s) > 7:
         print("".join(t[i]),"-->", x )
 
 print("\n")
