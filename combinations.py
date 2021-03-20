@@ -52,11 +52,11 @@ def main():
     while True:
         i = str(input("\nDo you want to save all the combinations ? Please enter yes or no: "))
         if i == "yes":
-            print("\nYour combinations have been successfully saved in the file.txt")
             f = open("file.txt", "w")
             for element in t:
                 f.write("".join(map(str,element)))
                 f.write("\n")
+            print("\nYour combinations have been successfully saved in the file.txt")
             sys.exit(0)
         elif i == "no":
             print("\nYou quit the program and the combinations are not saved!")
