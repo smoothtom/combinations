@@ -59,7 +59,7 @@ def main():
                 f.write("\n")
             sys.exit(0)
         elif i == "no":
-            print("\nYou quit the programm and the combinations are not saved!")
+            print("\nYou quit the program and the combinations are not saved!")
             sys.exit(0)
 
 def start():
