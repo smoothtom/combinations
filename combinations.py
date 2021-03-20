@@ -48,20 +48,19 @@ def main():
 
     print("\n")
 
-    # ask the user after the loop, to save the combinations in a extra .txt file
-    i = input("Do you want to save all these combinations ? Please Enter (y)es or (n)o: ")
-    if i == "yes" or "y":
-        print("\nYour combinations have been successfully saved in the file.txt")
-        f = open("file.txt", "w")
-        for element in t:
-            f.write("".join(map(str,element)))
-            f.write("\n")
-    elif i == "no" or "n":
-        print("You quit this programm, without saving all your combinations")
-        sys.exit(0)
-    # if user types no - then the programm will quit
-    else:
-        sys.exit(0)
+    # while loop for the user input
+    while True:
+        i = str(input("\nDo you want to save all the combinations ? Please enter yes or no: "))
+        if i == "yes":
+            print("\nYour combinations have been successfully saved in the file.txt")
+            f = open("file.txt", "w")
+            for element in t:
+                f.write("".join(map(str,element)))
+                f.write("\n")
+            sys.exit(0)
+        elif i == "no":
+            print("\nYou quit the programm and the combinations are not saved!")
+            sys.exit(0)
 
 def start():
     intro()
