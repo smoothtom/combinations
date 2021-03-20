@@ -9,7 +9,7 @@ import datetime
 def intro():
     print("\n")
     print("*" * 41)
-    print("** Welcome to my Combination Programm! **")
+    print("** Welcome to my Combination Program! **")
     print("*" * 41)
 
 # main function, where the main programm is written
