@@ -20,7 +20,7 @@ def main():
     t = list(itertools.permutations(s,len(s)))
 
     # prints the length of the word from the user input
-    print("Your input is" ,len(s), "words long\n")
+    print("Your input is" ,len(s), "letters long\n")
 
     print("loading the combinations...")
     time.sleep(2)
