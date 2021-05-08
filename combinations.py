@@ -17,7 +17,7 @@ def main():
     print("\n")
     s = input("Please Enter something for different combinations: ")
 
-    # check if word is bigger then 11 letters
+    # check if word is bigger than 11 letters
     if len(s) > 11:
         print("\nProgramm can't take this long word")
         sys.exit(0)
