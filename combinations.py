@@ -16,6 +16,12 @@ def intro():
 def main():
     print("\n")
     s = input("Please Enter something for different combinations: ")
+
+    # max 11 letters
+    if len(s) > 11:
+        print("\nProgramm can't take this long word")
+        sys.exit(0)
+
     print("\n")
     t = list(itertools.permutations(s,len(s)))
 
